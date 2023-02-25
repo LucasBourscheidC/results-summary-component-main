@@ -10,7 +10,6 @@ main {
 }
 
 .attribution {
-    margin-top: 2rem;
     font-size: 11px;
     text-align: center;
 }
@@ -26,7 +25,7 @@ main {
 }
 
 .main-card {
-    height: 90%;
+    height: auto;
     max-width: 100%;
 }
 
@@ -36,7 +35,7 @@ main {
     flex-direction: column;
     justify-content: space-around;
     border-radius: 0 0 30px 30px;
-    height: 50%;
+    height: 30%;
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
@@ -134,11 +133,34 @@ button:active {
         display: flex;
         justify-content: center;
         align-items: center;
-
+        flex-direction: column;
     }
 
     .main-card {
         width: 50%;
         max-height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .first-card {
+        height: 100%;
+        width: 50%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .second-card {
+
+        padding-top: 2rem;
+        height: 100%;
+        width: 50%;
+    }
+
+    .second-card h3 {
+        font-size: 22px;
+        font-weight: normal;
     }
 }
